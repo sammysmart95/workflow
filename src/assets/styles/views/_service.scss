@@ -1,10 +1,16 @@
 .service {
   .service-header {
     padding: 30px;
+    width: 100%;
+    background: linear-gradient(to bottom, #000, transparent),
+      url("../../images/service.jpg");
+    background-size: cover;
+    height: 70vh;
     .title {
       text-align: center;
       padding-top: 100px;
       font-size: 60px;
+      color: white;
     }
   }
   .container {
@@ -26,7 +32,7 @@
     .divisions {
       // padding: 30px;
       .moblie {
-        margin: 0 10%;
+        margin: 15px 10%;
         .mobile-image {
           margin: 2px;
           height: 300px;
