@@ -1,4 +1,13 @@
 import React from "react";
+import Angular from "../assets/images/angular.jpg";
+import Android from "../assets/images/android.png";
+import IOS from "../assets/images/ios.jpg";
+import Java from "../assets/images/java.jpg";
+import Native from "../assets/images/native.png";
+import Node from "../assets/images/node.png";
+import PHP from "../assets/images/php.png";
+import Python from "../assets/images/python.png";
+import react from "../assets/images/react.png";
 
 const Service = () => (
   <div className="service">
@@ -74,64 +83,37 @@ const Service = () => (
           <div className="framework col-md-6">
             <div className="framework-row">
               <div className="social">
-                <a href="/#">
-                  <i className="fa fa-google" aria-hidden="true" />
-                  <span>Google</span>
-                </a>
+                <img src={Angular} alt="Web Development" />
               </div>
               <div className="social">
-                <a href="/#">
-                  <i className="fa fa-linkedin" aria-hidden="true" />
-                  <span>Linkedin</span>
-                </a>
+                <img src={Android} alt="Web Development" />
               </div>
               <div className="social">
-                <a href="/#">
-                  <i className="fa fa-github" aria-hidden="true" />
-                  <span>Github</span>
-                </a>
+                <img src={IOS} alt="Web Development" />
               </div>
             </div>
             <br />
             <div className="framework-row">
               <div className="social">
-                <a href="/#">
-                  <i className="fa fa-facebook" aria-hidden="true" />
-                  <span>Facebook</span>
-                </a>
+                <img src={Java} alt="Web Development" />
               </div>
               <div className="social">
-                <a href="/#">
-                  <i className="fa fa-twitter" aria-hidden="true" />
-                  <span>Tweeter</span>
-                </a>
+                <img src={Native} alt="Web Development" />
               </div>
               <div className="social">
-                <a href="/#">
-                  <i className="fa fa-skype" aria-hidden="true" />
-                  <span>Skype</span>
-                </a>
+                <img src={Node} alt="Web Development" />
               </div>
             </div>
             <br />
             <div className="framework-row">
               <div className="social">
-                <a href="/#">
-                  <i className="fa fa-instagram" aria-hidden="true" />
-                  <span>Instagram</span>
-                </a>
+                <img src={PHP} alt="Web Development" />
               </div>
               <div className="social">
-                <a href="/#">
-                  <i className="fa fa-telegram" aria-hidden="true" />
-                  <span>Telegram</span>
-                </a>
+                <img src={Python} alt="Web Development" />
               </div>
               <div className="social">
-                <a href="/#">
-                  <i className="fa fa-slack" aria-hidden="true" />
-                  <span>Slack</span>
-                </a>
+                <img src={react} alt="Web Development" />
               </div>
             </div>
           </div>

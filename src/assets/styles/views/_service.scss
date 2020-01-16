@@ -56,11 +56,14 @@
       }
       .framework {
         .framework-row {
+          height: 100px;
+          width: 50px;
           padding: 0 40px;
           line-height: 200%;
           display: flex;
           justify-content: space-between;
           size: 500px;
+          margin: 5px;
         }
       }
     }

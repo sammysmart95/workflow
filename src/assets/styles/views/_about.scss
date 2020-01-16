@@ -382,29 +382,52 @@
                 width: 90vw;
                 height: 300px;
               }
-            }
-            .training {
-              margin: 20px 0;
-              img {
-                height: 300px;
-                width: 80vw;
-                transition: width 1s, height 1s, transform 1s;
+              .software-modal {
+                padding: 10px;
+                .modal {
+                  display: block;
+                  background: #fefefe;
+                  border: 2px solid #888;
+                  padding-top: 20px;
+                  height: 80vh;
+                  width: 80vw;
+                  .software-row {
+                    // margin: auto;
+                    padding: 0;
+                    width: 80%;
+                  }
+                  .modal-image {
+                    img {
+                      width: 80vw;
+                      height: 400px;
+                      margin: 2px;
+                    }
+                  }
+                }
               }
-              img:hover {
-                width: 90vw;
-                height: 300px;
+              .training {
+                margin: 20px 0;
+                img {
+                  height: 300px;
+                  width: 80vw;
+                  transition: width 1s, height 1s, transform 1s;
+                }
+                img:hover {
+                  width: 90vw;
+                  height: 300px;
+                }
               }
-            }
-            .development {
-              margin: 20px 0;
-              img {
-                height: 300px;
-                width: 80vw;
-                transition: width 1s, height 1s, transform 1s;
-              }
-              img:hover {
-                width: 90vw;
-                height: 300px;
+              .development {
+                margin: 20px 0;
+                img {
+                  height: 300px;
+                  width: 80vw;
+                  transition: width 1s, height 1s, transform 1s;
+                }
+                img:hover {
+                  width: 90vw;
+                  height: 300px;
+                }
               }
             }
           }

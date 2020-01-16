@@ -104,32 +104,38 @@ const Contact = () => (
             </a>
           </ul>
         </div>
-        <form className="feedback-form">
+        <form className="feedback-form" action="" method="">
           <input
             className="name"
             type="text"
+            name="fullName"
+            value=""
             placeholder="Full Name"
             required
           />
           <br />
-          <select className="options" required>
-            <option>-- Select Catergory --</option>
-            <option value="grapefruit">Web Application</option>
-            <option value="lime">Mobile Application</option>
-            <option value="coconut">Full Stack</option>
-            <option value="mango">Data Base</option>
+          <select value="data-base" className="options" required>
+            {/* <option value="Select Catergory">-- Select Catergory --</option> */}
+            <option value="web-application">Web Application</option>
+            <option value="mobile-application">Mobile Application</option>
+            <option value="full-stack">Full Stack</option>
+            <option value="data-base">Data Base</option>
           </select>
           <br />
 
           <input
             className="email"
             type="email"
+            name="email"
+            value=""
             placeholder="Your Email"
             required
           />
           <input
             className="number"
             type="number"
+            name="phoneNumber"
+            value=""
             placeholder="Phone Number"
             required
           />
@@ -137,11 +143,13 @@ const Contact = () => (
           <input
             className="company"
             type="text"
+            name="companyName"
+            value=""
             placeholder="Company Name"
             required
           />
           <br />
-          <textarea className="textarea" type="text" placeholder="Message" />
+          <textarea className="textarea" type="text" name="textField" value="" placeholder="Message" />
 
           <br />
           <button className="feedback-button" type="submit">

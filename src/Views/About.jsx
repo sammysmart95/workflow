@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import img from "../assets/images/about.png";
 
 const About = () => {
-
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className="about">
       <div className="about-header">
@@ -71,12 +71,24 @@ const About = () => {
               <div className="software col-md-4">
                 <img src={img} alt="Software Design" />
                 <h2>Remote Software Design and Development</h2>
-                <button>
-                  Read More <i className="fa fa-arrow-right" aria-hidden="true"></i>
+                <button
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
+                  Read More
+                  <i className="fa fa-arrow-right" aria-hidden="true"></i>
                 </button>
-                <div className="software-modal">
+                <div
+                  className={`software-modal`}
+                  style={{
+                    display: showModal ? "block" : "none"
+                  }}
+                >
                   <div className="modal">
-                    <span className="close">&times;</span>
+                    <span className="close" onClick={() => setShowModal(false)}>
+                      &times;
+                    </span>
                     <div className="software-row">
                       <div className="modal-image col-md-6">
                         <img src={img} alt="Software Design" />
@@ -116,12 +128,24 @@ const About = () => {
                   width="200px"
                 />
                 <h2>Training and Capacity Building in Software Development </h2>
-                <button>
-                  Read More <i className="fa fa-arrow-right" aria-hidden="true"></i>
+                <button
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
+                  Read More
+                  <i className="fa fa-arrow-right" aria-hidden="true"></i>
                 </button>
-                <div className="training-modal">
+                <div
+                  className="training-modal"
+                  // style={{
+                  //   display: showModal ? "block" : "none"
+                  // }}
+                >
                   <div className="modal">
-                    <span className="close">&times;</span>
+                    <span className="close" onClick={() => setShowModal(false)}>
+                      &times;
+                    </span>
                     <div className="training-row">
                       <div className="modal-image col-md-6">
                         <img src={img} alt="Capacity Building" />
@@ -163,12 +187,24 @@ const About = () => {
                   width="200px"
                 />
                 <h2>Responsive Web Designs and Development</h2>
-                <button>
-                  Read More <i className="fa fa-arrow-right" aria-hidden="true"></i>
+                <button
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                >
+                  Read More
+                  <i className="fa fa-arrow-right" aria-hidden="true"></i>
                 </button>
-                <div className="development-modal">
+                <div
+                  className="development-modal"
+                  // style={{
+                  //   display: showModal ? "block" : "none"
+                  // }}
+                >
                   <div className="modal">
-                    <span className="close">&times;</span>
+                    <span className="close" onClick={() => setShowModal(false)}>
+                      &times;
+                    </span>
                     <div className="development-row">
                       <div className="modal-image col-md-6">
                         <img src={img} alt="Web Development" />
